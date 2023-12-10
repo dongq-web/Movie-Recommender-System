@@ -8,7 +8,7 @@ In this project, we utilized two versions of the MovieLens dataset: a smaller se
 In machine learning, the usual approach involves partitioning data into train, validation, and test sets for cross-validation. However, this methodology doesn't translate well to recommender systems. These systems face a limitation: a model can't recommend items to a user it hasn't encountered in the training set. Consequently, it's crucial to ensure that users in the validation and test sets also exist in the training set. Moreover, it's essential to avoid overlap between users in the validation and test sets since both need to remain distinct, ensuring that the validation set generalizes effectively across all users without overlap with the test set.
 
 **Data Partition Code Utilizing SQL and Spark**
-<img src=/Images/spark_sql.png width=50% height=50%>
+<img src=/Images/spark_sql.png width=80% height=80%>
 
 
 ### Baseline Popularity Model
