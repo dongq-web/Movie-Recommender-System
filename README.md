@@ -6,7 +6,7 @@ In this project, we utilized two versions of the MovieLens dataset: a smaller se
 
 ### Data Partition
 In machine learning, the usual approach involves partitioning data into train, validation, and test sets for cross-validation. However, this methodology doesn't translate well to recommender systems. These systems face a limitation: a model can't recommend items to a user it hasn't encountered in the training set. Consequently, it's crucial to ensure that users in the validation and test sets also exist in the training set. Moreover, it's essential to avoid overlap between users in the validation and test sets since both need to remain distinct, ensuring that the validation set generalizes effectively across all users without overlap with the test set.
-![](Images/spark_sql.png)
+![](/Images/spark_sql.png)
 Data Partition Code Utilizing **SQL** and **Spark**
 
 
@@ -15,14 +15,14 @@ A recommender system is an algorithm designed to forecast the score or ranking a
 
 ### Alternating Least Suqare (ALS) Model
 A more advanced recommendation model utilizes Spark's alternating least squares (ALS) method to acquire latent factor representations for both users and items.
-![](Images/baseline_als.png)
+![](/Images/baseline_als.png)
 Evaluation Results Comparing Baseline and ALS Using Precition at k and MAP
 
 ### LightFM Model
 LightFM operates as a single-machine implementation of a recommender system, equipped with its own Python library, eliminating the necessity for Spark usage.
-![](Images/lightfm_map.png)
+![](/Images/lightfm_map.png)
 **Python** Code Calculating MAP using **Numpy** and **Pandas**
-![](Images/lightfm_als.png)
+![](/Images/lightfm_als.png)
 Evaluation Results Comparing Baseline and ALS Using Precition at k and MAP
 
 
