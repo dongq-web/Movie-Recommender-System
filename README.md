@@ -18,16 +18,16 @@ A recommender system is an algorithm designed to forecast the score or ranking a
 A more advanced recommendation model utilizes Spark's alternating least squares (ALS) method to acquire latent factor representations for both users and items.
 
 **Evaluation Results Comparing Baseline and ALS Using Precition at k and MAP**
-![](/Images/baseline_als.png| width=100)
+<img src=/Images/baseline_als.png width=60% height=60%>
 
 ### LightFM Model
 LightFM operates as a single-machine implementation of a recommender system, equipped with its own Python library, eliminating the necessity for Spark usage.
 
 **Python Code Calculating MAP using Numpy and Pandas**
-![](/Images/lightfm_map.png)
+<img src=/Images/lightfm_map.png width=80% height=80%>
 
 **Evaluation Results Comparing Baseline and ALS Using Precition at k and MAP**
-![](/Images/als_lightfm.png)
+<img src=/Images/als_lightfm.png width=60% height=60%>
 
 
 
