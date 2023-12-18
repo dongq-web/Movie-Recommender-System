@@ -41,23 +41,27 @@ In machine learning, the usual approach involves partitioning data into train, v
 <img src=/Images/spark_sql.png width=80% height=80%>
 
 ### Prediction Results
+
 **Popularity Model Results**
+
 <img src=/Images/popularity_result.png width=50% height=50%>
 
 Popularity model simply recommends the same movies to every user based on their average ratings.
 
 **ALS Model Results**
+
 <img src=/Images/als_result.png width=50% height=50%>
 
 ALS Model gives a predicted rating to every user based on other similar users.
 
 **LightFM Model Results**
+
 Because the model input of LightFM model is different than the other two, the output of LightFM would look like the interaction matrix sample that was provided at the beginning, with each entries filled with the predicted **rank** (not rating) of each movie
 
 ### Performance Evaluation
-The evaluation metric are Precision at k and Mean Average Precision(MAP).
+The evaluation metrics are Precision at k and Mean Average Precision(MAP).
 
-<img src=/Images/metric_example.png width=50% height=50%>
+<img src=/Images/metric_example.png width=40% height=40%>
 
 Imagine this is a list of movie recommended to a user, ordering descendingly by the rank of each movie. The green check mark means that the user watched the movie, whereas the red cross mark means the user didn't watch the movie. 
 
@@ -67,11 +71,11 @@ Imagine this is a list of movie recommended to a user, ordering descendingly by 
 - Average Precision = Average of the all the Precision at k for k=1 to 100
 - Mean Average Precision = Mean of Average Precision for all the users
 
-**Evaluation Results Comparing Popularity and ALS Using Precition at k and MAP**
-<img src=/Images/baseline_als.png width=40% height=40%>
-
 **Python Code Calculating MAP using Numpy and Pandas**
 <img src=/Images/lightfm_map.png width=60% height=60%>
+
+**Evaluation Results Comparing Popularity and ALS Using Precition at k and MAP**
+<img src=/Images/baseline_als.png width=40% height=40%>
 
 **Evaluation Results Comparing Baseline and ALS Using Precision at k and MAP**
 <img src=/Images/als_lightfm.png width=40% height=40%>
