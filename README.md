@@ -50,7 +50,7 @@ Popularity model simply recommends the same movies to every user based on their 
 
 **ALS Model Results**
 
-<img src=/Images/als_result.png width=50% height=50%>
+<img src=/Images/als_result.png width=30% height=30%>
 
 ALS Model gives a predicted rating to every user based on other similar users.
 
