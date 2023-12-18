@@ -52,7 +52,7 @@ Popularity model simply recommends the same movies to every user based on their 
 
 <img src=/Images/als_result.png width=30% height=30%>
 
-ALS Model gives a predicted rating to every user based on other similar users.
+ALS Model gives a predicted rating to every movie based on other similar users.
 
 **LightFM Model Results**
 
@@ -80,7 +80,7 @@ Imagine this is a list of movie recommended to a user, ordering descendingly by 
 **Evaluation Results Comparing LightFM and ALS Using Precision at k and MAP**
 <img src=/Images/als_lightfm.png width=40% height=40%>
 
-Something to note is that this recommender system is evaluated based on implicit feedback: the number of movies that a specific user watched from the list of movies that were recommended to them. Since it is impossible for a user to watch all the movies that were recommended to them, it is impossible to reach a high precision.
+One thing to note is that this recommender system is evaluated based on implicit feedback: the number of movies that a specific user watched from the list of movies that were recommended to them. Since it is impossible for a user to watch all the movies that were recommended to them, it is impossible to reach a high precision.
 
 
 
