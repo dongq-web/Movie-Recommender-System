@@ -77,10 +77,10 @@ Imagine this is a list of movie recommended to a user, ordering descendingly by 
 **Evaluation Results Comparing Popularity and ALS Using Precition at k and MAP**
 <img src=/Images/baseline_als.png width=40% height=40%>
 
-**Evaluation Results Comparing Baseline and ALS Using Precision at k and MAP**
+**Evaluation Results Comparing LightFM and ALS Using Precision at k and MAP**
 <img src=/Images/als_lightfm.png width=40% height=40%>
 
-Something to note is that this recommender system is evaluated based on implicit feedback: the number of moviea that a specific user watched from the list of movies that were recommended to them. Since it is impossible for a user to watch all the movies that were recommended to them, it is impossible to reach the high precision like a normal machine learning algorithm.
+Something to note is that this recommender system is evaluated based on implicit feedback: the number of movies that a specific user watched from the list of movies that were recommended to them. Since it is impossible for a user to watch all the movies that were recommended to them, it is impossible to reach a high precision.
 
 
 
