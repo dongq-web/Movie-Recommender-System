@@ -72,12 +72,15 @@ Imagine this is a list of movie recommended to a user, ordering descendingly by 
 - Mean Average Precision = Mean of Average Precision for all the users
 
 **Python Code Calculating MAP using Numpy and Pandas**
+
 <img src=/Images/lightfm_map.png width=60% height=60%>
 
 **Evaluation Results Comparing Popularity and ALS Using Precition at k and MAP**
+
 <img src=/Images/baseline_als.png width=40% height=40%>
 
 **Evaluation Results Comparing LightFM and ALS Using Precision at k and MAP**
+
 <img src=/Images/als_lightfm.png width=40% height=40%>
 
 One thing to note is that this recommender system is evaluated based on implicit feedback: the number of movies that a specific user watched from the list of movies that were recommended to them. Since it is impossible for a user to watch all the movies that were recommended to them, it is impossible to reach a high precision.
