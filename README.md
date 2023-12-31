@@ -1,11 +1,11 @@
 # Movie Recommender System
 ### Summary
 
-Recommender System is a subclass of information filtering system that provide sugguestions for items that are most pertinent to a particular user. One type of recommender system, collaborative filtering, recommend items based on how similar users behave.
+Recommender System is a subclass of information filtering system that provides sugguestions for items that are most pertinent to a particular user. One type of recommender system, collaborative filtering, recommend items based on how similar users behave.
 
 <img src=/Images/recommender_system.png width=50% height=50%>
 
-In most cases, the model would takes in a sparse matrix where the rows are different users and the columns are different movies. Since most users only watched a few movies, most of the entries would be empty.
+In most cases, the model would take in a sparse matrix where the rows are different users and the columns are different movies. Since most users only watched a few movies, most of the entries would be empty.
 
 <img src=/Images/sparse_matrix.png width=50% height=50%>
 
@@ -56,14 +56,14 @@ ALS Model gives a predicted rating to every movie based on other similar users.
 
 **LightFM Model Results**
 
-Because the model input of LightFM model is different than the other two, the output of LightFM would look like the interaction matrix sample that was provided at the beginning, with each entries filled with the predicted **rank** (not rating) of each movie
+Because the model input of LightFM model is different from the other two, the output of LightFM would look like the interaction matrix sample that was provided at the beginning, with each entries filled with the predicted **rank** (not rating) of each movie
 
 ### Performance Evaluation
 The evaluation metrics are Precision at k and Mean Average Precision(MAP).
 
 <img src=/Images/metric_example.png width=40% height=40%>
 
-Imagine this is a list of movie recommended to a user, ordering descendingly by the rank of each movie. The green check mark means that the user watched the movie, whereas the red cross mark means the user didn't watch the movie. 
+Imagine this is a list of movies recommended to a user, ordering descendingly by the rank of each movie. The green check mark means that the user watched the movie, whereas the red cross mark means the user didn't watch the movie. 
 
 - Precision at 1 = 1/1 = 1
 - Precision at 2 = 1/2 = 0.5
@@ -83,7 +83,9 @@ Imagine this is a list of movie recommended to a user, ordering descendingly by 
 
 <img src=/Images/als_lightfm.png width=40% height=40%>
 
-One thing to note is that this recommender system is evaluated based on implicit feedback: the number of movies that a specific user watched from the list of movies that were recommended to them. Since it is impossible for a user to watch all the movies that were recommended to them, it is impossible to reach a high precision.
+On average, LightFM model has the highest Precision at k and Mean Average Precision, and it also has a lower computation time compared to the ALS model.
+
+One thing to note is that this recommender system is evaluated based on implicit feedback: the number of movies that the users watched from the list of movies that were recommended to them. Since it is impossible for a user to watch all the movies that were recommended to them, it is impossible to reach a high precision.
 
 
 
